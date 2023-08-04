@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <script src="https://kit.fontawesome.com/0ce217495b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+<!-- addition of list -->
+        <section class="container-input">
+            <h1>ToDo List</h1>
+            <div class="inputBox">
+                    <input type="text" id="input-text" placeholder="📑 Add the list here.."/>
+                    <button id="add-button" class="btn btn-add ">
+                        <i class="fa-regular fa-square-plus fa-beat-fade" style="color: #530754;"></i>
+                    </button>
+                    
+            </div>
+        </section>
+<!-- delete section -->
+        <div class="delete-button">
+            <button class="btn delete-selected" id="delete-selectes">Delete selected</button>
+            <button class="btn delete-all" id="delete-entire"> Delete all</button>
+    
+        </div>
+
+<!-- placement of list  -->
+        <ul id="all-todos" class="todos-list">
+
+        </ul>
+<!-- fltering out the tasks -->
+        <div class="result">
+            <div class="result-filter">
+                <button class="filterbtn">Select</button>
+                <div class="SelectionBox">
+                        <a href="#" id="all">All</a>
+                        <a href="#" id="completed">Completed</a>
+                        <a href="#" id="incomplete">Incomplete</a>
+                </div>
+            </div>
+            <div class="completed-task">
+                <p>Completed: <span id="c-count">0</span></p>
+            </div>
+            <div class="remaining-task">
+                <p>Total: <span id="r-count">0</span></p>
+            </div>
+            
+        </div>
+
+    </div>
+    <script src="script.js"> </script>
+</body>
+</html>
